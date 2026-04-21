@@ -1,6 +1,6 @@
 import cv2
 import numpy as np
-# Pastikan path import sesuai dengan struktur folder Anda
+# Menggunakan tanda titik (.) karena mereka berada di folder yang sama
 from .slant import analyze_slant
 from .segmentation import get_line_segments
 from .baseline import analyze_baseline
