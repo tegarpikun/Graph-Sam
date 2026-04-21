@@ -16,7 +16,7 @@ function App() {
 
     try {
       // Pastikan backend Python Anda jalan di port 8000
-      const response = await axios.post('http://127.0.0.1:8000/analyze', formData);
+      const response = await axios.post('https://graph-sam-production.up.railway.app/analyze', formData);
       setResult(response.data);
     } catch (error) {
       console.error("Error uploading file", error);
