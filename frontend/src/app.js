@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import { Upload, Activity, CheckCircle, AlertCircle } from 'lucide-react';
+import { Upload, Activity } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 function App() {
@@ -15,12 +15,12 @@ function App() {
     formData.append('file', file);
 
     try {
-      // Menghubungkan ke endpoint FastAPI yang telah Anda buat
+      // Pastikan backend Python Anda jalan di port 8000
       const response = await axios.post('http://127.0.0.1:8000/analyze', formData);
       setResult(response.data);
     } catch (error) {
       console.error("Error uploading file", error);
-      alert("Gagal menganalisis gambar.");
+      alert("Gagal menganalisis gambar. Pastikan backend sudah menyala.");
     } finally {
       setLoading(false);
     }
