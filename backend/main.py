@@ -1,7 +1,7 @@
 from fastapi import FastAPI, UploadFile, File
 import shutil
 import os
-from .processor.orchestrator import run_full_analysis
+from processor.orchestrator import run_full_analysis
 
 app = FastAPI()
 
