@@ -1,0 +1,10 @@
+grafologi-app/
+├── backend/
+│   ├── main.py          # FastAPI entry point
+│   ├── processor/
+│   │   ├── __init__.py
+│   │   ├── slant.py     # Kode yang sudah Anda buat
+│   │   ├── baseline.py  # Kode regresi tadi
+│   │   └── utils.py     # Preprocessing (grayscale, threshold)
+├── samples/             # Foto tulisan tangan untuk test
+└── venv/                # Virtual environment
